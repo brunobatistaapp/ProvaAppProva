@@ -1,0 +1,9 @@
+## YAML Templatesss
+---
+default:    --format pretty -p html -p qa -p chrome
+for_ci:     --format progress
+html:       --format html --out=results/report.html
+json:       --format json --out=results/report.json
+qa:         ENVIRONMENT_TYPE=qa
+chrome:     BROWSER=chrome
+firefox:    BROWSER=firefox
